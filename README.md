@@ -42,8 +42,7 @@ dados por chaves e não por índice, como é o array, fazendo com que cada elemt
       gerarNumerosMegaSena();
 
   Como exibido no console do navegador, a função gera números aleatórios com Set, que não permite valores repetidos, portanto a verificação
-  da duplicidade não é necessária a cada loop. Aqui estamos tratando de uma coleção pequena, os 6 números da megasena, mas em maiores volumes de dados, 
-  a diferença de performance pode ser significativa.
+  da duplicidade não é necessária a cada loop.
 
   ![image](https://github.com/user-attachments/assets/94a9c264-6309-4654-98f0-7b5245054b6c)
 
