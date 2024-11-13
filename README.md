@@ -29,17 +29,14 @@ dados por chaves e não por índice, como é o array, fazendo com que cada elemt
     //Função otimizada utilizando Set
 function gerarNumerosMegaSena() {
     const colecaoMegaSenaSet = new Set();
-  
     while (colecaoMegaSenaSet.size < 6) {
       const numeroAleatorio = Math.floor(Math.random() * 60) + 1;
       colecaoMegaSenaSet.add(numeroAleatorio);
     }
-  
     const colecaoMegaSenaArray = Array.from(colecaoMegaSenaSet);
     console.log("Seu jogo da Mega Sena tem os seguintes números", colecaoMegaSenaArray);
     return colecaoMegaSenaArray;
   }
-  
   gerarNumerosMegaSena();
 
   Como exibido no console do navegador, a função gera números aleatórios com Set, que não permite valores repetidos, portanto a verificação
