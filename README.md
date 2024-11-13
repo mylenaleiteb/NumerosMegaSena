@@ -1,5 +1,6 @@
-# NumerosMegaSena
+# Numeros Mega Sena
 
+Atividade proposta para avaliação C2 da disciplina de Desenvolvimento de Aplicações Web I.
 O objetivo desse trabalho é buscar uma solução mais eficiente (em termos de recursos computacionais) para geração de 6 números aleatórios utilizando Javascript.
 
       //Função original:
@@ -92,3 +93,5 @@ Função Otimizada: 0.049072265625 ms
 ![image](https://github.com/user-attachments/assets/431f2800-259c-4ff9-a5d2-930203732a66)
 
 Como pode ser obsevado, a função otimizada realmente retornou o resultado em um tempo menor.
+
+Fontes: https://oieduardorabelo.medium.com/javascript-set-vs-array-quando-e-como-usar-cf05a7a6ce54
