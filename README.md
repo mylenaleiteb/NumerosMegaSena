@@ -90,6 +90,9 @@ Função Otimizada: 0.049072265625 ms
 
 ![image](https://github.com/user-attachments/assets/431f2800-259c-4ff9-a5d2-930203732a66)
 
+![image](https://github.com/user-attachments/assets/afcd116d-fcf7-4aa7-bac1-39870ee7a740)
+
 Como pode ser obsevado, a função otimizada realmente retornou o resultado em um tempo menor.
+
 
 Fontes: https://oieduardorabelo.medium.com/javascript-set-vs-array-quando-e-como-usar-cf05a7a6ce54
