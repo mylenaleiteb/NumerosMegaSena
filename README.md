@@ -46,43 +46,44 @@ dados por chaves e não por índice, como é o array, fazendo com que cada elemt
 
 Teste de performance:
 Para testar o código acima, a primeira validação mostrará a geração dos números da Mega Sena executando cada função uma vez.
-    function testePerformance() {
-      console.time("Função Original");
-      gerarAleatorios();
-      console.timeEnd("Função Original");
-    
-      console.time("Função Otimizada");
-      gerarNumerosMegaSena();
-      console.timeEnd("Função Otimizada");
-    }
-    
-    function gerarAleatorios() {
-        var vetor = [ ] 
-         while(vetor.length < 6){
-          var aleatorio = Math.floor(Math.random() * 60 + 1)
+
+          function testePerformance() {
+            console.time("Função Original");
+            gerarAleatorios();
+            console.timeEnd("Função Original");
           
-           if(vetor.includes(aleatorio)){
-            continue
-        }{
-          vetor.push(aleatorio)
-        }
-        }
-        return vetor
-        }
-    
-    function gerarNumerosMegaSena() {
-        const colecaoMegaSenaSet = new Set();
-      
-        while (colecaoMegaSenaSet.size < 6) {
-          const numeroAleatorio = Math.floor(Math.random() * 60) + 1;
-          colecaoMegaSenaSet.add(numeroAleatorio);
-        }
-      
-        const colecaoMegaSenaArray = Array.from(colecaoMegaSenaSet);
-        return colecaoMegaSenaArray;
-      }
-      
-      testePerformance();
+            console.time("Função Otimizada");
+            gerarNumerosMegaSena();
+            console.timeEnd("Função Otimizada");
+          }
+          
+          function gerarAleatorios() {
+              var vetor = [ ] 
+               while(vetor.length < 6){
+                var aleatorio = Math.floor(Math.random() * 60 + 1)
+                
+                 if(vetor.includes(aleatorio)){
+                  continue
+              }{
+                vetor.push(aleatorio)
+              }
+              }
+              return vetor
+              }
+          
+          function gerarNumerosMegaSena() {
+              const colecaoMegaSenaSet = new Set();
+            
+              while (colecaoMegaSenaSet.size < 6) {
+                const numeroAleatorio = Math.floor(Math.random() * 60) + 1;
+                colecaoMegaSenaSet.add(numeroAleatorio);
+              }
+            
+              const colecaoMegaSenaArray = Array.from(colecaoMegaSenaSet);
+              return colecaoMegaSenaArray;
+            }
+            
+            testePerformance();
 
 Função Original: 0.052978515625 ms
 Função Otimizada: 0.049072265625 ms
