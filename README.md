@@ -30,9 +30,9 @@ dados por chaves e não por índice, como é o array, fazendo com que cada elemt
     function gerarNumerosMegaSena() {
         const colecaoMegaSenaSet = new Set();
       
-        while (colecaoMegaSena.size < 6) {
+        while (colecaoMegaSenaSet.size < 6) {
           const numeroAleatorios = Math.floor(Math.random() * 60) + 1;
-          colecaoMegaSena.add(numeroAleatorio);
+          colecaoMegaSenaSet.add(numeroAleatorio);
         }
       
         const colecaoMegaSenaArray = Array.from(numeros);
